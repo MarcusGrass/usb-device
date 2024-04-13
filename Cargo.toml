@@ -20,7 +20,7 @@ rusb = "0.9.1"
 rand = "0.8.5"
 
 [features]
-default = ["portable-atomic"]
+default = []
 
 # Use larger endpoint buffers for highspeed operation (default fullspeed)
 #
