@@ -110,6 +110,7 @@ impl<B: UsbBus> TestClass<'_, B> {
     ///
     /// on the returned builder. If you change the manufacturer, product, or serial number fields,
     /// the test host may misbehave.
+    #[expect(static_mut_refs)]
     pub fn make_device_builder<'a>(
         &self,
         usb_bus: &'a UsbBusAllocator<B>,
